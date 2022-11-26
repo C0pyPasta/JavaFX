@@ -20,4 +20,5 @@
     <RadioButton fx:id="scissor" toggleGroup="$toggleGroup" GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.halignment="CENTER">"Scissor"</RadioButton>
 
     <Button text="Go!" onAction="#checkRadioButtonChecked" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+    
 </GridPane>
