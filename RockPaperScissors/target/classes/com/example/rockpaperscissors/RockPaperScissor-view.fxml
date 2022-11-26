@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<GridPane fx:controller="com.example.rockpaperscissors.RockPaperScissorController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="15" vgap="15">
+
+    <Label fx:id="outcome" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.halignment="CENTER"/>
+    <Label fx:id="computerIsChoosing" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.halignment="CENTER"/>
+
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup"/>
+    </fx:define>
+
+    <RadioButton fx:id="rock" toggleGroup="$toggleGroup" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="CENTER">"Rock"</RadioButton>
+    <RadioButton fx:id="paper" toggleGroup="$toggleGroup" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="CENTER">"Paper"</RadioButton>
+    <RadioButton fx:id="scissor" toggleGroup="$toggleGroup" GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.halignment="CENTER">"Scissor"</RadioButton>
+
+    <Button text="Go!" onAction="#checkRadioButtonChecked" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+</GridPane>
